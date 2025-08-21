@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="border-b-[1px]">
-      <div className="flex justify-between items-center py-3 px-6">
+      <div className="container mx-auto flex justify-between items-center py-3">
         {/* Logo */}
         <div>
           <Link href="/" className="text-2xl font-bold text-sky-800">
