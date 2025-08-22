@@ -71,9 +71,9 @@ const Footer = () => {
   return (
     <div className="">
       <div className="w-[90%] mx-auto ">
-        <div className="flex flex-col lg:flex-row gap-5 md:gap-20 ">
+        <div className="flex flex-col lg:flex-row justify-between gap-5 md:gap-20 ">
 
-          <div className="w-full">
+          <div className="w-auto">
             {/* logo with des */}
             <div className="flex flex-col gap-3  w-auto ">
               <Image
@@ -102,7 +102,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-5 md:gap-20 ">
+          <div className="w-full  flex flex-col md:flex-row justify-between gap-5 md:gap-20 ">
             {/* pages */}
             <div className="flex flex-col gap-1 w-[85%] ">
               <h2 className="text-3xl font-bold">Pages</h2>
