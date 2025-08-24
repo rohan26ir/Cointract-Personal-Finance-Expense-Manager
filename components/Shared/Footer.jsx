@@ -92,7 +92,7 @@ const Footer = () => {
               <div className="flex justify-between items-center w-60 gap-2">
                 {social.map((itemIcon) => (
                   <Link key={itemIcon.id} href={itemIcon.href}>
-                    <div className="bg-gray-300 hover:bg-sky-200 w-16 h-16 mx-auto flex justify-center items-center rounded-2xl">
+                    <div className="bg-gray-300/20 hover:bg-white/25 w-16 h-16 mx-auto flex justify-center items-center rounded-2xl">
                        <div className="text-shadow-blue-950">{itemIcon.icon}</div>
                     </div>
                   </Link>
@@ -138,12 +138,12 @@ const Footer = () => {
         {/* go to top */}
         <div className="flex justify-end items-center  py-5">
           <Link href={"/"}>
-            <div className="flex items-center justify-center h-10 w-10 bg-blue-300 rounded-full overflow-hidden relative"
+            <div className="flex items-center justify-center h-10 w-10 bg-white rounded-full overflow-hidden relative"
                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <ArrowUp />
 
               {/* animation */}
-              <div className="absolute h-20 w-20 rounded-full bg-fuchsia-500/60 animate-pulse "></div>
+              <div className="absolute h-20 w-20 rounded-full bg-black/20 animate-pulse "></div>
 
 
             </div>

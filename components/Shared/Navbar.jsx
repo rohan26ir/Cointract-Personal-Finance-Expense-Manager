@@ -61,7 +61,7 @@ const Navbar = () => {
         <div>
           <Link
             href="/"
-            className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"
+            className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-orange-300"
           >
             Cointract
           </Link>
@@ -122,12 +122,12 @@ const Navbar = () => {
           ) : (
             <>
               <Link href="/signin">
-                <button className="px-4 py-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300">
+                <button className="cursor-pointer px-4 py-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300">
                   Sign In
                 </button>
               </Link>
               <Link href="/signup">
-                <button className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300">
+                <button className="cursor-pointer px-4 py-2 bg-gray-100 border border-gray-300 text-black font-medium rounded-2xl hover:shadow-lg transition-all duration-300">
                   Create Account
                 </button>
               </Link>
@@ -140,7 +140,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
-            className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+            className="p-2 rounded-lg hover:bg-gray-100 text-black transition-colors duration-300"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -206,7 +206,7 @@ const Navbar = () => {
                 <Link href="/signup" className="block">
                   <button
                     onClick={() => setIsOpen(false)}
-                    className="w-full py-2 px-4 text-center  rounded-lg font-medium hover:shadow-lg transition-all duration-200"
+                    className="w-full py-2 px-4 text-center text-black rounded-lg font-medium hover:shadow-lg duration-200"
                   >
                     Create Account
                   </button>
