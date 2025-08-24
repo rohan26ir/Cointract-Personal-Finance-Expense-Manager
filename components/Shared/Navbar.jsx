@@ -38,7 +38,7 @@ const Navbar = () => {
     { id: 5, name: "Contact", href: "/contact" },
   ];
 
-  const user = false;
+  const user = !false;
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -55,7 +55,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-white shadow-md rounded-2xl ">
       <div className="w-[90%] mx-auto flex justify-between items-center py-3">
         {/* Logo */}
         <div>
@@ -115,7 +115,7 @@ const Navbar = () => {
         <div className="hidden  lg:flex items-center gap-4">
           {user ? (
             <Link href="/dashboard">
-              <button className="px-4 py-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300">
+              <button className="px-4 py-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300 border cursor-pointer">
                 Dashboard
               </button>
             </Link>
@@ -188,7 +188,7 @@ const Navbar = () => {
               <Link href="/dashboard" className="block">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="w-full py-2 px-4 text-center bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors duration-200"
+                  className="w-full py-2 px-4 text-center bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors duration-200 cursor-pointer"
                 >
                   Dashboard
                 </button>
