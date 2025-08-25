@@ -1,10 +1,32 @@
-export default function HomePage() {
+import Accourding from "./components/Accourding";
+import FAQs from "./components/FAQs";
+import Hero from "./components/Hero";
+import Newsletter from "./components/Newsletter";
+import Testimonal from "./components/Testimonal";
+
+
+const page = () => {
   return (
-    <section className="space-y-4">
-      <h1 className="text-3xl font-bold">Welcome to the Public Site</h1>
-      <p className="text-gray-600">
-        This is the homepage at <code>/</code> using the Public layout.
-      </p>
-    </section>
+    <div>
+      <section className="w-full"><Hero></Hero></section>
+
+      <section>
+        <Accourding></Accourding>
+      </section>
+
+      <section>
+        <Testimonal></Testimonal>
+      </section>
+
+      <section>
+        <FAQs></FAQs>
+      </section>
+
+      <section>
+        <Newsletter></Newsletter>
+      </section>
+    </div>
   );
-}
+};
+
+export default page;

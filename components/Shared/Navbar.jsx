@@ -55,7 +55,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md rounded-2xl ">
+    <nav className="sticky top-0 z-50 bg-white rounded-lg border ">
       <div className="w-[90%] mx-auto flex justify-between items-center py-3">
         {/* Logo */}
         <div>

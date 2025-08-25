@@ -3,16 +3,16 @@ import Navbar from "../../../components/Shared/Navbar";
 
 export default function PublicLayout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="border-b">
+    <div className="flex flex-col w-[95%] max-w-[2000px] mx-auto my-5">
+      <header className="mb-5">
         <Navbar></Navbar>
       </header>
 
-      <main className="flex-1 max-w-5xl mx-auto px-4 py-10">
+      <main className="min-h-screen">
         {children}
       </main>
 
-      <footer className="border-t">
+      <footer className="">
         <Footer></Footer>
       </footer>
     </div>
