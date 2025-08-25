@@ -19,7 +19,7 @@ const FormMain = () => {
               with inquiries, support, or collaboration opportunities.
             </p>
 
-            <div className="bg-black text-white rounded-lg mt-5">
+            <div className=" rounded-lg mt-5">
               <Lottie
                 animationData={contactus}
                 loop
@@ -27,7 +27,7 @@ const FormMain = () => {
                 style={{ width: "100%", height: 400 }}
               />
 
-              <div className="flex flex-col md:flex-row gap-2 p-5 border-t">
+              <div className="flex flex-col md:flex-row gap-2 p-5 ">
                 <div className="flex gap-2 justify-center items-center p-2 border w-full md:w-1/2 cursor-pointe bg-white/20 cursor-pointer ">
                   <Phone />
                   <p>(414) 687 - 5892</p>
@@ -40,7 +40,7 @@ const FormMain = () => {
             </div>
           </div>
           {/* right side form */}
-          <div className="w-[100%] bg-white text-black rounded-lg shadow p-5 md:p-10 border ">
+          <div className="w-[100%] rounded-lg shadow p-5 md:p-10 border ">
             <form className="flex flex-col gap-5">
               <label htmlFor="">Name</label>
               <input

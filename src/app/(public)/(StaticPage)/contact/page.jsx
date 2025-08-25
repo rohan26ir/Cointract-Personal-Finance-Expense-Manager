@@ -10,7 +10,7 @@ import FormMain from "./components/FormMain";
 const Page = () => {
   return (
     <div>
-      <div className="w-[100%] lg:w-[80%] mx-auto ">
+      <div className="w-[100%] mx-auto ">
 
         <section className="border mb-3 rounded-lg  p-5 md:p-10">
           <FormMain></FormMain>
@@ -18,7 +18,7 @@ const Page = () => {
 
 
         <section>
-            <FormFooter></FormFooter>
+            {/* <FormFooter></FormFooter> */}
         </section>
 
       </div>
