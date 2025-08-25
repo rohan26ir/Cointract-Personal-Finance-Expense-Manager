@@ -8,7 +8,7 @@ export default function PublicLayout({ children }) {
         <Navbar></Navbar>
       </header>
 
-      <main className="min-h-screen">
+      <main className="">
         {children}
       </main>
 
