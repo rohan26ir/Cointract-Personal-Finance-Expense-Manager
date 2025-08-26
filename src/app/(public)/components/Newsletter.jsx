@@ -1,6 +1,6 @@
 "use client"
 
-import { Vault } from "lucide-react";
+import { Undo, Vault } from "lucide-react";
 import { useState } from "react";
 
 const Newsletter = () => {
@@ -19,17 +19,21 @@ const Newsletter = () => {
       <div className='bg-black text-white rounded-lg p-10'>
         <div>
 
-          <form onSubmit={handleSubmit} className='text-white flex flex-col w-60 mx-auto'>
-            <label htmlFor="">Newsletter</label>
+          <form onSubmit={handleSubmit} className='text-white flex flex-col justify-center items-center w-[50%] mx-auto gap-5'>
+            <label htmlFor="" className="text-5xl text-center">Stay Ahead of Expenses With Exclusive Budgeting Tips and News</label>
             
-            <div className='flex gap-2'>
+            <div className='flex gap-2 w-[70%]'>
               <input 
               type="email" 
               required 
               name='newsletter' 
-              placeholder='Enter your email' 
-              className='bg-white text-black rounded-md forced-colors:bg-red-600 p-2' />
-              <button type="submit" className='bg-amber-500 px-5 rounded-lg font-bold cursor-pointer'>Submit</button>
+              placeholder='Your email' 
+              className='bg-white text-black rounded-md forced-colors:bg-red-600 px-2 py-5  w-[70%]' />
+              <button type="submit" className='bg-amber-500 px-5 rounded-lg font-bold cursor-pointer w-[30%] flex items-center justify-center gap-1 '>Subscribe <Undo /></button>
+            </div>
+
+            <div className="flex justify-center items-center ">
+              <p className="text-gray-300">Join 4,300+ freelancers · Unsubscribe anytime</p>
             </div>
 
           </form>
