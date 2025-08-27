@@ -2,7 +2,6 @@
 
 import React from "react";
 import Lottie from "lottie-react";
-// import contactus from "/lottie/contactusLottie.json";
 import contactus from "../../../../../../public/lottie/contactusLottie.json";
 import { Phone, Send } from "lucide-react";
 

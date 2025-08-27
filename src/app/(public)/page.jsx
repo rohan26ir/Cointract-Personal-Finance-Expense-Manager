@@ -1,6 +1,7 @@
 'use client';
 
 import Accordion from "./components/Accordion";
+import Cursor from "./components/Cursor";
 import FAQs from "./components/FAQs";
 import Hero from "./components/Hero";
 import Newsletter from "./components/Newsletter";
@@ -15,6 +16,9 @@ const page = () => {
         </section>
 
       
+      <section>
+        <Cursor></Cursor>
+      </section>
 
       <section>
         <Testimonal></Testimonal>
