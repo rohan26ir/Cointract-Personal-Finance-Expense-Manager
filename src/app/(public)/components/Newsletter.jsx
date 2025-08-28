@@ -33,7 +33,7 @@ const Newsletter = () => {
             </div>
 
             <div className="flex justify-center items-center ">
-              <p className="text-gray-300">Join 4,300+ freelancers · Unsubscribe anytime</p>
+              <p className="text-gray-300">Join 4,300+ user · Unsubscribe anytime</p>
             </div>
 
           </form>
