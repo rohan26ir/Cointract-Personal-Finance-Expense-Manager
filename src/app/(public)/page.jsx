@@ -2,6 +2,7 @@
 
 import Accordion from "./components/Accordion";
 import Cursor from "./components/Cursor";
+import Expenses from "./components/Expenses";
 import Hero from "./components/Hero";
 import Newsletter from "./components/Newsletter";
 import Testimonal from "./components/Testimonal";
@@ -18,6 +19,10 @@ const page = () => {
       
       <section>
         <Cursor></Cursor>
+      </section>
+
+      <section>
+        <Expenses></Expenses>
       </section>
 
       <div>

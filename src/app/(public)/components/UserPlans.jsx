@@ -1,122 +1,139 @@
+import { Check } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
 const UserPlans = () => {
+  const plans = [
+    {
+      id: 1,
+      name: 'Starter',
+      badge: 'FREE',
+      price: '$0',
+      priceType: 'Free-forever',
+      description:
+        'For Starter to get started with free plan forever and ever.',
+      btn: 'Try for free',
+      features: [
+        'Unlimited files in drafts',
+        'Unlimited viewers and commenters',
+        'Unlimited editors on 3 team files',
+        '1 team project',
+      ],
+      accent: '#FFBB00',
+    },
+    {
+      id: 2,
+      name: 'Professional',
+      badge: 'BEST SELLER',
+      price: '$12',
+      priceType: 'Editor/month',
+      description:
+        'For professional business, billed annually or $15 month-to-month.',
+      btn: 'Get Started',
+      features: [
+        'Unlimited files in drafts',
+        'Unlimited viewers and commenters',
+        '30-day version history',
+        'Shareable team libraries',
+      ],
+      accent: '#0099FF',
+    },
+    {
+      id: 3,
+      name: 'Enterprise',
+      badge: 'POG CHAMP',
+      price: '$45',
+      priceType: 'Editor/month',
+      description:
+        'For organizations team that need additional control, security, and support.',
+      btn: 'Get Started',
+      features: [
+        'Unlimited files in drafts',
+        'Unlimited viewers and commenters',
+        'Shareable team libraries',
+        'Design System Analytics',
+      ],
+      accent: '#7B55EC',
+    },
+    {
+      id: 4,
+      name: 'Custom',
+      badge: 'CONTACT US',
+      price: 'Contact us',
+      priceType: '',
+      description:
+        'Tailored solutions for enterprises that need custom integrations and compliance.',
+      btn: 'Talk to us',
+      features: [
+        'All Enterprise features',
+        'Custom integrations',
+        'Dedicated onboarding',
+        '24/7 priority support',
+      ],
+      accent: '#FF5722',
+    },
+  ];
 
-    const plans = [
-  {
-    id: 1,
-    name: 'Free Plan',
-    price: 'Free',
-    priceType: '',
-    btn: "Get Started",
-    features: [
-      'Basic budgeting tools',
-      'Expense tracking',
-      'Financial goal setting',
-      'Email support',
-      'Mobile access',
-      'Weekly spending summaries'
-    ]
-  },
-  {
-    id: 2,
-    name: 'Pro Plan',
-    price: '$9.99',
-    priceType: '/mo',
-    btn: "Upgrade Now",
-    features: [
-      'All Free Plan features',
-      'Advanced analytics',
-      'Priority email support',
-      'Customizable reports',
-      'Automatic bank syncing',
-      'Export data to CSV/Excel',
-      'Smart alerts and notifications'
-    ]
-  },
-  {
-    id: 3,
-    name: 'Premium Plan',
-    price: '$19.99',
-    priceType: '/mo',
-    btn: "Upgrade Now",
-    features: [
-      'All Pro Plan features',
-      'One-on-one financial coaching',
-      'Early access to new features',
-      'Dedicated account manager',
-      'Personalized investment insights',
-      'Tax optimization tips',
-      'Advanced security and data encryption'
-    ]
-  },
-  {
-    id: 4,
-    name: 'Enterprise Plan',
-    price: 'Contact us',
-    priceType: '',
-    btn: "Talk to Us",
-    features: [
-      'All Premium Plan features',
-      'Team accounts',
-      'Custom integrations',
-      '24/7 phone support',
-      'Dedicated onboarding specialist',
-      'API access',
-      'Custom compliance and reporting tools'
-    ]
-  }
-]
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-10">
+      {plans.map((plan) => (
+        <div
+  key={plan.id}
+  className="bg-[#0D0D0D] rounded-2xl px-8 py-10 text-white flex flex-col justify-between shadow-lg space-y-14"
+  style={{ border: `1px solid ${plan.color}` }}
+>
 
-
-    return (
-        <div>
-            <div>
-                
-                <div className='flex flex-col md:flex-row justify-between items-center mb-5 py-5'>
-                    <div className='flex-1'>
-                        <h2 className='text-4xl font-extrabold'>User plan</h2>
-                        <p className='text-xl'>Choose the plan that best fits your needs and start managing your finances effectively today!</p>
-                    </div>
-                    <div className='flex-2 flex justify-end'>
-
-                    </div>
-                </div>
-
-                <div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4   gap-5'>
-                        {plans.map((plan) => (
-                            <div key={plan.id} className='bg-black text-white p-10 rounded-lg  space-y-10'>
-                                <h3 className='bg-blue-500 px-3 py-1 inline-block rounded-md uppercase text-sm font-bold'>{plan.name}</h3>
-                                <div className='flex '>
-                                    <p className='text-4xl font-bold'>{plan.price}</p>
-                                    <p className='text-xl font-bold flex items-end'>{plan.priceType}</p>
-                                </div>
-
-                                <Link href="#" 
-                                className='bg-amber-500 text-white rounded-lg py-2 px-5 text-lg font-bold flex gap-2 cursor-pointer justify-center'>
-                                    {plan.btn}
-                                </Link>
-
-                                <ul>
-                                    {plan.features.map((feature, index) => (
-                                        
-                                        <div className='flex items-center gap-2'>
-                                            <div className='h-3 w-3 bg-white  rounded-[1px]'></div>
-                                            <p key={index} className='list-disc'>{feature}</p>
-                                        </div>
-
-                                    ))}
-                                </ul>
-                               
-                            </div>
-                        ))}
-                    </div>
-                </div>
+          <div className='space-y-6'>
+            <p className="text-xs tracking-widest text-gray-400">PLAN</p>
+            <div className="flex justify-between items-center ">
+              <h3
+                className="text-2xl font-bold"
+                style={{ color: plan.accent }}
+              >
+                {plan.name}
+              </h3>
+              <span
+                className="text-xs font-semibold px-3 py-1 rounded-full"
+                style={{ backgroundColor: plan.accent }}
+              >
+                {plan.badge}
+              </span>
             </div>
+
+            <div className="flex items-end mt-6">
+              <p className="text-5xl font-bold">{plan.price}</p>
+              <p className="ml-2 text-lg text-gray-400">{plan.priceType}</p>
+            </div>
+
+            <p className="mt-4 text-gray-400">{plan.description}</p>
+
+            <hr className="my-6 border-gray-700" />
+
+            <ul className="space-y-3">
+              {plan.features.map((feature, index) => (
+                <li key={index} className="flex items-center gap-2">
+                  <Check
+                    className="h-5 w-5"
+                    style={{ color: plan.accent }}
+                  />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <Link
+            href="#"
+            className="mt-8 w-full py-3 rounded-xl text-center font-semibold"
+            style={{ backgroundColor: plan.accent }}
+          >
+            {plan.btn}
+          </Link>
+
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default UserPlans;
