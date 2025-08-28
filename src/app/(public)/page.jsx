@@ -2,10 +2,10 @@
 
 import Accordion from "./components/Accordion";
 import Cursor from "./components/Cursor";
-import FAQs from "./components/FAQs";
 import Hero from "./components/Hero";
 import Newsletter from "./components/Newsletter";
 import Testimonal from "./components/Testimonal";
+import UserPlans from "./components/UserPlans";
 
 
 const page = () => {
@@ -19,6 +19,10 @@ const page = () => {
       <section>
         <Cursor></Cursor>
       </section>
+
+      <div>
+        <UserPlans></UserPlans>
+      </div>
 
       <section>
         <Testimonal></Testimonal>
