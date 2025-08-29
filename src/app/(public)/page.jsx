@@ -17,13 +17,13 @@ const page = () => {
         </section>
 
       
-      <section>
+      <section className="my-10">
         <Cursor></Cursor>
       </section>
 
-      <section>
+      {/* <section>
         <Expenses></Expenses>
-      </section>
+      </section> */}
 
       <div>
         <UserPlans></UserPlans>
@@ -37,7 +37,7 @@ const page = () => {
         <Accordion></Accordion>
       </section>
 
-      <section>
+      <section className="my-10">
         <Newsletter></Newsletter>
       </section>
     </div>
