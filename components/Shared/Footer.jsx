@@ -70,7 +70,7 @@ const Footer = () => {
 
   return (
     <div className="">
-      <div className="w-[100%] mx-auto pt-10 px-10 rounded-2xl bg-white border">
+      <div className="w-[100%] mx-auto pt-10 px-10 rounded-2xl bg-white text-black border">
         <div className="flex flex-col lg:flex-row justify-between gap-5 md:gap-20 ">
 
           <div className="w-auto">
