@@ -78,9 +78,9 @@ const UserPlans = () => {
   return (
     <div>
       
-      <div className="my-10 w-[80%] mx-auto">
+      <div className="my-10 w-[80%] mx-auto ">
         <h2 className="text-7xl font-extrabold text-center">User Plan</h2>
-        <p className="text-lg text-center mt-4 text-gray-600">
+        <p className="text-lg text-center mt-4 text-gray-400">
           Choose the perfect plan tailored to your needs and unlock a world of
           possibilities with our flexible subscription options.
         </p>
