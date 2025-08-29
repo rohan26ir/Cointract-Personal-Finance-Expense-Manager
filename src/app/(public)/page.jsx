@@ -29,9 +29,9 @@ const page = () => {
         <UserPlans></UserPlans>
       </div>
 
-      <section>
+      {/* <section>
         <Testimonal></Testimonal>
-      </section>
+      </section> */}
 
       <section>
         <Accordion></Accordion>

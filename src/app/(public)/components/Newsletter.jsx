@@ -16,10 +16,10 @@ const Newsletter = () => {
 
   return (
     <div className='my-3'>
-      <div className='bg-black text-white rounded-lg p-10'>
+      <div className='bg-black text-white rounded-lg p-10   w-[75%] mx-auto '>
         <div>
 
-          <form onSubmit={handleSubmit} className='text-white flex flex-col justify-center items-center w-[50%] mx-auto gap-5'>
+          <form onSubmit={handleSubmit} className='text-white flex flex-col justify-center items-center w-[70%] mx-auto gap-5'>
             <label htmlFor="" className="text-5xl text-center">Stay Ahead of Expenses With Exclusive Budgeting Tips and News</label>
             
             <div className='flex gap-2 w-[70%]'>
@@ -28,7 +28,7 @@ const Newsletter = () => {
               required 
               name='newsletter' 
               placeholder='Your email' 
-              className='bg-white text-black rounded-md forced-colors:bg-red-600 px-2 py-5  w-[70%]' />
+              className='bg-white text-black rounded-md forced-colors:bg-red-600 px-2 py-5  w-[80%]' />
               <button type="submit" className='bg-amber-500 px-5 rounded-lg font-bold cursor-pointer w-[30%] flex items-center justify-center gap-1 '>Subscribe <Undo /></button>
             </div>
 

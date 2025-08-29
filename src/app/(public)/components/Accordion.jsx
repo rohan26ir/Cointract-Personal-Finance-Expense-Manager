@@ -8,33 +8,33 @@ const Accordion = () => {
   const faqs = [
     {
       id: 1,
-      question: "What is your return policy?",
+      question: "How does your platform help me track my expenses?",
       answer:
-        "We offer a 30-day return policy on all unused items with original packaging. Returns must be accompanied by a valid receipt or proof of purchase.",
+        "Our platform provides intuitive tools to categorize and monitor your spending automatically. You can connect bank accounts, credit cards, and manually input cash expenses to get a complete picture of where your money goes each month.",
     },
     {
       id: 2,
-      question: "How long does shipping take?",
+      question: "Can I create and manage budgets with your tool?",
       answer:
-        "Standard shipping takes 3-5 business days. Express shipping is available for delivery within 1-2 business days. International shipping typically takes 7-14 business days depending on the destination.",
+        "Yes, you can set custom budgets for different spending categories, track your progress in real-time, and receive alerts when you're approaching your limits. Our system helps you stay on track with visual indicators and monthly reports.",
     },
     {
       id: 3,
-      question: "Do you offer international shipping?",
+      question: "What kind of financial insights will I gain?",
       answer:
-        "Yes, we ship to over 50 countries worldwide. Shipping costs and delivery times vary by destination. Additional customs fees or taxes may apply depending on your country's import regulations.",
+        "Our platform analyzes your spending patterns to identify trends, highlight potential savings opportunities, and show you where you might be overspending. You'll receive personalized recommendations to improve your financial health.",
     },
     {
       id: 4,
-      question: "How can I track my order?",
+      question: "How does your platform help with financial goal setting?",
       answer:
-        "Once your order ships, you'll receive a confirmation email with a tracking number and link. You can also track your order by logging into your account on our website and visiting the 'Order History' section.",
+        "You can set specific financial goals (like saving for a vacation or paying off debt), track your progress with visual milestones, and get actionable steps to help you achieve them faster. The system adjusts recommendations based on your spending habits.",
     },
     {
       id: 5,
-      question: "What payment methods do you accept?",
+      question: "Is my financial data secure with your platform?",
       answer:
-        "We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, Apple Pay, Google Pay, and select cryptocurrencies. All payments are processed securely through encrypted channels.",
+        "Absolutely. We use bank-level encryption, secure connections, and never store your banking credentials. Your data is private and protected with multiple layers of security measures.",
     },
   ];
 
@@ -43,8 +43,8 @@ const Accordion = () => {
   };
 
   return (
-    <div className="mt-3">
-      <div className="bg-black text-white rounded-lg p-10">
+    <div className="mt-3  bg-gray-200 rounded-lg">
+      <div className="rounded-lg p-10">
         <div className="w-[90%] md:w-[80%] lg:w-[55%] mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">
             Frequently Asked Questions
@@ -54,7 +54,7 @@ const Accordion = () => {
             {faqs.map((faq, index) => (
               <div
                 key={faq.id}
-                className="bg-white text-black rounded-lg transition-all duration-300 overflow-hidden"
+                className="bg-black text-gray-300 rounded-lg transition-all duration-300 overflow-hidden"
                 style={{
                   maxHeight: activeIndex === index ? "300px" : "64px",
                   transition: "max-height 0.3s ease-in-out",
@@ -92,7 +92,7 @@ const Accordion = () => {
                     maxHeight: activeIndex === index ? "1000px" : "0",
                   }}
                 >
-                  <p className="text-gray-700 pl-9">{faq.answer}</p>
+                  <p className="text-gray-300 pl-9">{faq.answer}</p>
                 </div>
               </div>
             ))}
