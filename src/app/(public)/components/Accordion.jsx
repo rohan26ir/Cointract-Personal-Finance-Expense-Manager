@@ -1,6 +1,9 @@
 "use client";
+import Lottie from "lottie-react";
 import { CircleQuestionMark, ChevronDown } from "lucide-react";
 import React, { useState } from "react";
+
+import heroLottie from '../../../../public/lottie/two-people-thinking.json';
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -43,14 +46,33 @@ const Accordion = () => {
   };
 
   return (
-    <div className="mt-3  bg-gray-200 rounded-lg">
-      <div className="rounded-lg p-10">
-        <div className="w-[90%] md:w-[80%] lg:w-[55%] mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Frequently Asked Questions
-          </h2>
+    <div className="my-20 border-amber-500/20 border-4 rounded-lg  flex flex-col md:flex-row justify-between items-center gap-5 overflow-hidden">
+      {/* left */}
+      <div className="w-[85%] h-full text-center relative">
+         <div className="flex justify-start items-center h-full p-5 w-[50%] mx-auto  ">
+          <h2 className="text-start text-7xl font-bold">Frequently Asked Questions</h2>
 
-          <div className="flex flex-col gap-3">
+
+         <div className="w-[50%] h-full absolute -right-[25%] -bottom-[0%]">
+          <Lottie  
+             animationData={heroLottie}
+             loop
+             autoplay
+              style={{ width: "100%", height: 400,  }}
+           />
+         </div>
+
+
+         </div>
+      </div>
+      {/* right */}
+      <div className=" px-10 py-16 w-[100%]  bg-amber-500/20">
+        <div className="w-[90%] md:w-[80%] lg:w-[95%] mx-auto">
+          {/* <h2 className="text-3xl font-bold mb-8 text-center">
+            Frequently Asked Questions
+          </h2> */}
+
+          <div className="flex flex-col gap-3 w-[85%] ml-auto">
             {faqs.map((faq, index) => (
               <div
                 key={faq.id}
