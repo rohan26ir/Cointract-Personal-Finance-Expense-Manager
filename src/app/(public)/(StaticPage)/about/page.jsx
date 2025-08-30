@@ -1,21 +1,20 @@
 'use client';
 
+import UnderConstruction from '@/app/ui/shared/UnderConstruction';
 import React from 'react';
 
 const page = () => {
     return (
         <div>
-            <div>
+            <div className=''>
                 
 
                 <div>
-                    <div>
-                        <h2>Get in touch today</h2>
-                    </div>
-                    <div>
-                        
-                    </div>
+                    <UnderConstruction></UnderConstruction>
                 </div>
+
+                {/* <div>
+                </div> */}
 
             </div>
         </div>
