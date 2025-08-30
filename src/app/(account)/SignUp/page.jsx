@@ -5,7 +5,19 @@ import ContinueWithSocial from '../components/ContinueWithSocial';
 
 const page = () => {
     return (
-        <div className=''>
+        <div className='w-[90%] mx-auto'>
+
+
+          <div className='flex justify-between items-center p-5 '>
+            <div>
+              <Link href={'/'}>
+                <h2 className='text-2xl font-bold'>Cointract</h2>
+              </Link>
+            </div>
+            <div></div>
+          </div>
+
+
           <div className='flex flex-col md:flex-row justify-between items-center gap-5'>
             <div className='w-[100%]  p-10   '>
             

@@ -38,7 +38,7 @@ const Navbar = () => {
     { id: 5, name: "Contact", href: "/contact" },
   ];
 
-  const user = !false;
+  const user = !true;
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -121,13 +121,13 @@ const Navbar = () => {
             </Link>
           ) : (
             <>
-              <Link href="/signin">
+              <Link href="/SignIn">
                 <button className="cursor-pointer px-4 py-2 text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300">
                   Sign In
                 </button>
               </Link>
-              <Link href="/signup">
-                <button className="cursor-pointer px-4 py-2 bg-gray-100 border border-gray-300 text-black font-medium rounded-2xl hover:shadow-lg transition-all duration-300">
+              <Link href="/SignUp">
+                <button className="cursor-pointer px-4 py-2 bg-gray-100 border border-gray-300 text-black font-medium rounded-lg  ">
                   Create Account
                 </button>
               </Link>
