@@ -53,7 +53,7 @@ const Accordion = () => {
           <h2 className="text-start text-7xl font-bold">Frequently Asked Questions</h2>
 
 
-         <div className="w-[50%] h-full absolute -right-[25%] -bottom-[0%]">
+         <div className="w-[50%] h-full absolute -right-[25%] bottom-0">
           <Lottie  
              animationData={heroLottie}
              loop
